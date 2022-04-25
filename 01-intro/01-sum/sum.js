@@ -1,5 +1,9 @@
 function sum(a, b) {
-  /* ваш код */
+  if (!Number.isInteger(a) || !Number.isInteger(b)) {
+    throw new TypeError('Invalid input');
+  }
+
+  return a + b;
 }
 
 module.exports = sum;
